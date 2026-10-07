@@ -13,14 +13,14 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "El Cacao de Luis — Premium Cacao for Global Food Manufacturing",
-  description: "B2B cacao export landing page demo built with Next.js and Tailwind CSS.",
+  title: "El Cacao de Luis — Cacao Premium para la Industria Alimentaria",
+  description: "Landing page demo B2B de exportación de cacao, construida con Next.js y Tailwind CSS.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
-      lang="en"
+      lang="es"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">{children}</body>

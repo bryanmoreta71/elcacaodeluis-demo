@@ -3,11 +3,11 @@
 import { useState } from "react";
 
 const links = [
-  { href: "#products", label: "Products" },
-  { href: "#quality", label: "Quality" },
-  { href: "#sustainability", label: "Sustainability" },
-  { href: "#capacity", label: "Capacity" },
-  { href: "#contact", label: "Contact" },
+  { href: "#products", label: "Productos" },
+  { href: "#quality", label: "Calidad" },
+  { href: "#sustainability", label: "Sostenibilidad" },
+  { href: "#capacity", label: "Capacidad" },
+  { href: "#contact", label: "Contacto" },
 ];
 
 export default function Navbar() {
@@ -41,13 +41,13 @@ export default function Navbar() {
           href="#contact"
           className="hidden rounded-md bg-[#5B3A29] px-5 py-2.5 text-sm font-bold text-[#FBF7F1] transition-colors hover:bg-[#2B1B12] lg:inline-block"
         >
-          Request a Quote
+          Solicitar Cotización
         </a>
 
         <button
           onClick={() => setOpen(!open)}
           className="flex h-10 w-10 items-center justify-center text-[#2B1B12] lg:hidden"
-          aria-label="Toggle menu"
+          aria-label="Abrir menú"
         >
           {open ? (
             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -79,7 +79,7 @@ export default function Navbar() {
               onClick={() => setOpen(false)}
               className="mt-2 rounded-md bg-[#5B3A29] px-5 py-2.5 text-center text-sm font-bold text-[#FBF7F1]"
             >
-              Request a Quote
+              Solicitar Cotización
             </a>
           </div>
         </div>

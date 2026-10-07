@@ -13,9 +13,9 @@ export default function QuoteForm() {
             <path d="M5 13l4 4L19 7" strokeLinecap="round" strokeLinejoin="round" />
           </svg>
         </div>
-        <h3 className="text-xl font-bold text-[#2B1B12]">Request received</h3>
+        <h3 className="text-xl font-bold text-[#2B1B12]">Solicitud recibida</h3>
         <p className="mt-2 text-sm text-[#5B4A3F]">
-          Our export team will review your requirements and respond within 1 business day.
+          Nuestro equipo de exportación revisará tus requerimientos y responderá dentro de 1 día hábil.
         </p>
       </div>
     );
@@ -32,23 +32,23 @@ export default function QuoteForm() {
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div>
           <label className="mb-1.5 block text-sm font-medium text-[#5B4A3F]">
-            Company name
+            Nombre de la empresa
           </label>
           <input
             required
             type="text"
-            placeholder="Your company"
+            placeholder="Tu empresa"
             className="w-full rounded-lg border border-black/10 bg-[#FBF7F1] px-4 py-2.5 text-[#2B1B12] placeholder:text-[#9C8A7C] focus:border-[#B2802B] focus:outline-none"
           />
         </div>
         <div>
           <label className="mb-1.5 block text-sm font-medium text-[#5B4A3F]">
-            Country
+            País
           </label>
           <input
             required
             type="text"
-            placeholder="Country of operation"
+            placeholder="País de operación"
             className="w-full rounded-lg border border-black/10 bg-[#FBF7F1] px-4 py-2.5 text-[#2B1B12] placeholder:text-[#9C8A7C] focus:border-[#B2802B] focus:outline-none"
           />
         </div>
@@ -56,12 +56,12 @@ export default function QuoteForm() {
 
       <div>
         <label className="mb-1.5 block text-sm font-medium text-[#5B4A3F]">
-          Work email
+          Correo de trabajo
         </label>
         <input
           required
           type="email"
-          placeholder="you@company.com"
+          placeholder="tu@empresa.com"
           className="w-full rounded-lg border border-black/10 bg-[#FBF7F1] px-4 py-2.5 text-[#2B1B12] placeholder:text-[#9C8A7C] focus:border-[#B2802B] focus:outline-none"
         />
       </div>
@@ -69,23 +69,23 @@ export default function QuoteForm() {
       <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
         <div>
           <label className="mb-1.5 block text-sm font-medium text-[#5B4A3F]">
-            Product of interest
+            Producto de interés
           </label>
           <select className="w-full rounded-lg border border-black/10 bg-[#FBF7F1] px-4 py-2.5 text-[#2B1B12] focus:border-[#B2802B] focus:outline-none">
-            <option>Cacao Beans</option>
-            <option>Cacao Powder</option>
-            <option>Cacao Butter</option>
-            <option>Cacao Liquor / Mass</option>
-            <option>Not sure yet</option>
+            <option>Granos de Cacao</option>
+            <option>Polvo de Cacao</option>
+            <option>Manteca de Cacao</option>
+            <option>Licor / Pasta de Cacao</option>
+            <option>Aún no estoy seguro</option>
           </select>
         </div>
         <div>
           <label className="mb-1.5 block text-sm font-medium text-[#5B4A3F]">
-            Estimated monthly volume
+            Volumen mensual estimado
           </label>
           <input
             type="text"
-            placeholder="e.g. 50 metric tons"
+            placeholder="ej. 50 toneladas métricas"
             className="w-full rounded-lg border border-black/10 bg-[#FBF7F1] px-4 py-2.5 text-[#2B1B12] placeholder:text-[#9C8A7C] focus:border-[#B2802B] focus:outline-none"
           />
         </div>
@@ -93,12 +93,12 @@ export default function QuoteForm() {
 
       <div>
         <label className="mb-1.5 block text-sm font-medium text-[#5B4A3F]">
-          Requirements
+          Requerimientos
         </label>
         <textarea
           required
           rows={4}
-          placeholder="Tell us about your sourcing needs, certifications required, delivery timeline..."
+          placeholder="Cuéntanos sobre tus necesidades de abastecimiento, certificaciones requeridas, tiempos de entrega..."
           className="w-full rounded-lg border border-black/10 bg-[#FBF7F1] px-4 py-2.5 text-[#2B1B12] placeholder:text-[#9C8A7C] focus:border-[#B2802B] focus:outline-none"
         />
       </div>
@@ -107,7 +107,7 @@ export default function QuoteForm() {
         type="submit"
         className="w-full rounded-md bg-[#5B3A29] px-6 py-3 text-sm font-bold text-[#FBF7F1] transition-colors hover:bg-[#2B1B12]"
       >
-        Submit Request for Quote
+        Enviar Solicitud de Cotización
       </button>
     </form>
   );

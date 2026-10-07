@@ -2,47 +2,47 @@ import Navbar from "./components/Navbar";
 import QuoteForm from "./components/QuoteForm";
 
 const stats = [
-  { value: "12,000+", label: "Metric tons / year" },
-  { value: "22", label: "Countries served" },
-  { value: "100%", label: "Farm-to-export traceability" },
-  { value: "15 yrs", label: "Export experience" },
+  { value: "12,000+", label: "Toneladas métricas / año" },
+  { value: "22", label: "Países atendidos" },
+  { value: "100%", label: "Trazabilidad finca-exportación" },
+  { value: "15 años", label: "De experiencia exportando" },
 ];
 
 const products = [
   {
-    name: "Cacao Beans",
-    desc: "Fermented and sun-dried beans graded to international standards, available in bulk container volumes.",
-    specs: ["Moisture: 6-7%", "Fat content: 50-57%", "Grade: I & II"],
+    name: "Granos de Cacao",
+    desc: "Granos fermentados y secados al sol, clasificados según estándares internacionales, disponibles en volúmenes de contenedor completo.",
+    specs: ["Humedad: 6-7%", "Contenido de grasa: 50-57%", "Grado: I y II"],
   },
   {
-    name: "Cacao Powder",
-    desc: "Natural and alkalized cacao powder milled to precise particle sizes for industrial food applications.",
-    specs: ["Fat content: 10-12% / 20-22%", "pH: 5.3-7.5", "Mesh: 200-325"],
+    name: "Polvo de Cacao",
+    desc: "Polvo de cacao natural y alcalinizado, molido a tamaños de partícula precisos para aplicaciones alimentarias industriales.",
+    specs: ["Contenido de grasa: 10-12% / 20-22%", "pH: 5.3-7.5", "Malla: 200-325"],
   },
   {
-    name: "Cacao Butter",
-    desc: "Deodorized and natural cacao butter, press-extracted for confectionery and chocolate manufacturing.",
-    specs: ["Free fatty acid: <1.75%", "Melting point: 32-35°C", "Food-grade packaging"],
+    name: "Manteca de Cacao",
+    desc: "Manteca de cacao desodorizada y natural, extraída por prensado para la fabricación de confitería y chocolate.",
+    specs: ["Ácido graso libre: <1.75%", "Punto de fusión: 32-35°C", "Empaque grado alimenticio"],
   },
   {
-    name: "Cacao Liquor / Mass",
-    desc: "100% pure ground cacao mass, block or chip format, ready for large-scale chocolate production lines.",
-    specs: ["Fat content: 54-58%", "Fineness: <30 microns", "Custom block sizing"],
+    name: "Licor / Pasta de Cacao",
+    desc: "Masa de cacao 100% pura y molida, en formato de bloque o chips, lista para líneas de producción de chocolate a gran escala.",
+    specs: ["Contenido de grasa: 54-58%", "Finura: <30 micrones", "Tamaño de bloque personalizado"],
   },
 ];
 
 const certifications = [
-  { name: "Organic Certified", desc: "USDA & EU Organic certification across our full supply chain." },
-  { name: "Fair Trade", desc: "Verified fair pricing and labor standards for every partner farm." },
-  { name: "Rainforest Alliance", desc: "Sustainable farming practices that protect biodiversity." },
-  { name: "HACCP & ISO 22000", desc: "Food safety management systems audited annually." },
+  { name: "Certificación Orgánica", desc: "Certificación Orgánica USDA y UE en toda nuestra cadena de suministro." },
+  { name: "Comercio Justo", desc: "Precios justos verificados y estándares laborales en cada finca asociada." },
+  { name: "Rainforest Alliance", desc: "Prácticas agrícolas sostenibles que protegen la biodiversidad." },
+  { name: "HACCP e ISO 22000", desc: "Sistemas de gestión de seguridad alimentaria auditados anualmente." },
 ];
 
 const process = [
-  { step: "01", title: "Sourcing", desc: "Direct partnerships with 3,000+ smallholder farms across cacao-growing regions." },
-  { step: "02", title: "Fermentation & Drying", desc: "Controlled fermentation protocols to lock in flavor consistency and quality grade." },
-  { step: "03", title: "Quality Testing", desc: "Lab-tested for moisture, fat content, and contaminants before every shipment." },
-  { step: "04", title: "Export & Logistics", desc: "Full container loads shipped from port-certified facilities to 22 countries." },
+  { step: "01", title: "Abastecimiento", desc: "Alianzas directas con más de 3,000 pequeños productores en regiones cacaoteras." },
+  { step: "02", title: "Fermentación y Secado", desc: "Protocolos de fermentación controlada para asegurar consistencia de sabor y grado de calidad." },
+  { step: "03", title: "Control de Calidad", desc: "Pruebas de laboratorio de humedad, contenido de grasa y contaminantes antes de cada envío." },
+  { step: "04", title: "Exportación y Logística", desc: "Contenedores completos enviados desde instalaciones portuarias certificadas a 22 países." },
 ];
 
 export default function Home() {
@@ -59,27 +59,27 @@ export default function Home() {
         <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-3xl text-center">
             <span className="inline-flex items-center rounded-full border border-[#B2802B]/30 bg-[#B2802B]/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-[#8A611F]">
-              Trusted by global food manufacturers
+              Proveedor de confianza para fabricantes de alimentos a nivel global
             </span>
             <h1 className="mt-6 text-4xl font-black leading-[1.1] tracking-tight text-[#2B1B12] sm:text-6xl">
-              Premium Cacao, Engineered for Industrial Scale
+              Cacao Premium, Diseñado para Escala Industrial
             </h1>
             <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-[#5B4A3F] sm:text-lg">
-              We supply traceable, certified cacao — beans, powder, butter, and liquor — to
-              confectionery and food manufacturers who can&apos;t afford inconsistency.
+              Suministramos cacao trazable y certificado — granos, polvo, manteca y licor —
+              a fabricantes de confitería y alimentos que no pueden permitirse inconsistencias.
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
               <a
                 href="#contact"
                 className="w-full rounded-md bg-[#5B3A29] px-8 py-3.5 text-sm font-bold text-[#FBF7F1] transition-colors hover:bg-[#2B1B12] sm:w-auto"
               >
-                Request a Quote
+                Solicitar Cotización
               </a>
               <a
                 href="#products"
                 className="w-full rounded-md border border-[#2B1B12]/15 px-8 py-3.5 text-sm font-bold text-[#2B1B12] transition-colors hover:bg-black/5 sm:w-auto"
               >
-                View Product Specs
+                Ver Especificaciones
               </a>
             </div>
           </div>
@@ -100,10 +100,10 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-sm font-bold uppercase tracking-wide text-[#B2802B]">
-              Product range
+              Gama de productos
             </h2>
             <p className="mt-3 text-3xl font-black tracking-tight text-[#2B1B12] sm:text-4xl">
-              Built for industrial formulation
+              Hecho para formulación industrial
             </p>
           </div>
 
@@ -134,10 +134,10 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-sm font-bold uppercase tracking-wide text-[#D9B468]">
-              From farm to factory
+              De la finca a la fábrica
             </h2>
             <p className="mt-3 text-3xl font-black tracking-tight text-[#FBF7F1] sm:text-4xl">
-              Full supply chain control
+              Control total de la cadena de suministro
             </p>
           </div>
 
@@ -158,10 +158,10 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-sm font-bold uppercase tracking-wide text-[#B2802B]">
-              Quality & compliance
+              Calidad y cumplimiento
             </h2>
             <p className="mt-3 text-3xl font-black tracking-tight text-[#2B1B12] sm:text-4xl">
-              Certified for enterprise sourcing
+              Certificados para abastecimiento empresarial
             </p>
           </div>
 
@@ -191,23 +191,24 @@ export default function Home() {
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
             <div>
               <h2 className="text-sm font-bold uppercase tracking-wide text-[#B2802B]">
-                Sustainability
+                Sostenibilidad
               </h2>
               <p className="mt-3 text-3xl font-black tracking-tight text-[#2B1B12] sm:text-4xl">
-                Sourcing that protects farmers and forests
+                Abastecimiento que protege a productores y bosques
               </p>
               <p className="mt-5 text-sm leading-relaxed text-[#5B4A3F] sm:text-base">
-                We work directly with smallholder cooperatives, paying above fair-trade
-                minimums and reinvesting in reforestation and soil health programs. For our
-                partners, that means a supply chain that holds up to ESG audits and
-                long-term sourcing commitments.
+                Trabajamos directamente con cooperativas de pequeños productores, pagando
+                por encima de los mínimos de comercio justo y reinvirtiendo en programas de
+                reforestación y salud del suelo. Para nuestros socios, eso significa una
+                cadena de suministro que resiste auditorías ESG y compromisos de
+                abastecimiento a largo plazo.
               </p>
               <ul className="mt-6 space-y-3">
                 {[
-                  "3,000+ partner farms under long-term contracts",
-                  "Zero-deforestation sourcing policy since 2019",
-                  "Annual third-party sustainability audits",
-                  "Community education & reinvestment programs",
+                  "Más de 3,000 fincas asociadas bajo contratos a largo plazo",
+                  "Política de cero deforestación desde 2019",
+                  "Auditorías de sostenibilidad anuales por terceros",
+                  "Programas de educación y reinversión comunitaria",
                 ].map((item) => (
                   <li key={item} className="flex items-start gap-2 text-sm text-[#2B1B12]">
                     <svg
@@ -230,19 +231,19 @@ export default function Home() {
               <div className="grid grid-cols-2 gap-6">
                 <div className="text-center">
                   <div className="text-3xl font-black text-[#2B1B12]">3,000+</div>
-                  <div className="mt-1 text-xs text-[#8A7764]">Partner farms</div>
+                  <div className="mt-1 text-xs text-[#8A7764]">Fincas asociadas</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-black text-[#2B1B12]">40%</div>
-                  <div className="mt-1 text-xs text-[#8A7764]">Above market pricing paid to farmers</div>
+                  <div className="mt-1 text-xs text-[#8A7764]">Pago sobre el precio de mercado a productores</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-black text-[#2B1B12]">0</div>
-                  <div className="mt-1 text-xs text-[#8A7764]">Deforestation incidents since 2019</div>
+                  <div className="mt-1 text-xs text-[#8A7764]">Incidentes de deforestación desde 2019</div>
                 </div>
                 <div className="text-center">
                   <div className="text-3xl font-black text-[#2B1B12]">6</div>
-                  <div className="mt-1 text-xs text-[#8A7764]">Growing regions sourced</div>
+                  <div className="mt-1 text-xs text-[#8A7764]">Regiones de cultivo abastecidas</div>
                 </div>
               </div>
             </div>
@@ -255,22 +256,22 @@ export default function Home() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="text-sm font-bold uppercase tracking-wide text-[#B2802B]">
-              Production capacity
+              Capacidad de producción
             </h2>
             <p className="mt-3 text-3xl font-black tracking-tight text-[#2B1B12] sm:text-4xl">
-              Built to supply at scale
+              Diseñados para abastecer a gran escala
             </p>
             <p className="mt-4 text-sm leading-relaxed text-[#5B4A3F] sm:text-base">
-              Our processing facilities and logistics network are designed for manufacturers
-              who need consistent, large-volume supply — not one-off shipments.
+              Nuestras instalaciones de procesamiento y red logística están diseñadas para
+              fabricantes que necesitan suministro consistente y de gran volumen — no envíos puntuales.
             </p>
           </div>
 
           <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {[
-              { title: "Full Container Loads", desc: "Standard FCL and LCL shipping from certified port facilities." },
-              { title: "Flexible Contracts", desc: "Spot purchases and multi-year supply agreements with price-lock options." },
-              { title: "Dedicated Account Team", desc: "A single point of contact for forecasting, QA documentation, and logistics." },
+              { title: "Contenedores Completos", desc: "Envíos estándar FCL y LCL desde instalaciones portuarias certificadas." },
+              { title: "Contratos Flexibles", desc: "Compras puntuales y acuerdos de suministro multianuales con opción de precio fijo." },
+              { title: "Equipo de Cuenta Dedicado", desc: "Un único punto de contacto para pronósticos, documentación de calidad y logística." },
             ].map((item) => (
               <div key={item.title} className="rounded-2xl border border-black/10 bg-white p-6">
                 <h3 className="text-lg font-bold text-[#2B1B12]">{item.title}</h3>
@@ -287,14 +288,15 @@ export default function Home() {
           <div className="grid grid-cols-1 gap-12 lg:grid-cols-2">
             <div>
               <h2 className="text-sm font-bold uppercase tracking-wide text-[#B2802B]">
-                Let&apos;s talk supply
+                Hablemos de suministro
               </h2>
               <p className="mt-3 text-3xl font-black tracking-tight text-[#2B1B12] sm:text-4xl">
-                Request a quote
+                Solicita una cotización
               </p>
               <p className="mt-4 max-w-md text-sm leading-relaxed text-[#5B4A3F] sm:text-base">
-                Tell us your volume, specs, and timeline — our export team will prepare a
-                formal quotation and sample shipment options within one business day.
+                Cuéntanos tu volumen, especificaciones y plazos — nuestro equipo de
+                exportación preparará una cotización formal y opciones de envío de muestra
+                dentro de un día hábil.
               </p>
 
               <div className="mt-8 space-y-5">
@@ -306,8 +308,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <div className="text-sm font-semibold text-[#2B1B12]">Export office</div>
-                    <div className="text-sm text-[#5B4A3F]">Guayaquil, Ecuador — Port-certified facility</div>
+                    <div className="text-sm font-semibold text-[#2B1B12]">Oficina de exportación</div>
+                    <div className="text-sm text-[#5B4A3F]">Guayaquil, Ecuador — Instalación certificada portuaria</div>
                   </div>
                 </div>
                 <div className="flex items-start gap-3">
@@ -318,7 +320,7 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <div className="text-sm font-semibold text-[#2B1B12]">Email</div>
+                    <div className="text-sm font-semibold text-[#2B1B12]">Correo electrónico</div>
                     <a href="mailto:export@elcacaodeluis.com" className="text-sm text-[#B2802B] hover:underline">
                       export@elcacaodeluis.com
                     </a>
@@ -332,8 +334,8 @@ export default function Home() {
                     </svg>
                   </div>
                   <div>
-                    <div className="text-sm font-semibold text-[#2B1B12]">Response time</div>
-                    <div className="text-sm text-[#5B4A3F]">Within 1 business day</div>
+                    <div className="text-sm font-semibold text-[#2B1B12]">Tiempo de respuesta</div>
+                    <div className="text-sm text-[#5B4A3F]">Dentro de 1 día hábil</div>
                   </div>
                 </div>
               </div>
@@ -356,7 +358,7 @@ export default function Home() {
             </span>
           </div>
           <p className="text-xs text-[#9C8A7C]">
-            © 2026 El Cacao de Luis Export. Demo website for portfolio purposes.
+            © 2026 El Cacao de Luis Export. Sitio demo con fines de portafolio.
           </p>
         </div>
       </footer>
