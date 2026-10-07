@@ -1,5 +1,8 @@
+import Image from "next/image";
 import Navbar from "./components/Navbar";
 import QuoteForm from "./components/QuoteForm";
+
+const basePath = "/cacao";
 
 const stats = [
   { value: "12,000+", label: "Toneladas métricas / año" },
@@ -11,21 +14,25 @@ const stats = [
 const products = [
   {
     name: "Granos de Cacao",
+    image: `${basePath}/images/cacao-beans-hand.jpg`,
     desc: "Granos fermentados y secados al sol, clasificados según estándares internacionales, disponibles en volúmenes de contenedor completo.",
     specs: ["Humedad: 6-7%", "Contenido de grasa: 50-57%", "Grado: I y II"],
   },
   {
     name: "Polvo de Cacao",
+    image: `${basePath}/images/cacao-powder.jpg`,
     desc: "Polvo de cacao natural y alcalinizado, molido a tamaños de partícula precisos para aplicaciones alimentarias industriales.",
     specs: ["Contenido de grasa: 10-12% / 20-22%", "pH: 5.3-7.5", "Malla: 200-325"],
   },
   {
     name: "Manteca de Cacao",
+    image: `${basePath}/images/cacao-butter.jpg`,
     desc: "Manteca de cacao desodorizada y natural, extraída por prensado para la fabricación de confitería y chocolate.",
     specs: ["Ácido graso libre: <1.75%", "Punto de fusión: 32-35°C", "Empaque grado alimenticio"],
   },
   {
     name: "Licor / Pasta de Cacao",
+    image: `${basePath}/images/cacao-liquor.jpg`,
     desc: "Masa de cacao 100% pura y molida, en formato de bloque o chips, lista para líneas de producción de chocolate a gran escala.",
     specs: ["Contenido de grasa: 54-58%", "Finura: <30 micrones", "Tamaño de bloque personalizado"],
   },
@@ -57,34 +64,53 @@ export default function Home() {
           className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_at_top,_rgba(178,128,43,0.12),_transparent_60%)]"
         />
         <div className="relative mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="mx-auto max-w-3xl text-center">
-            <span className="inline-flex items-center rounded-full border border-[#B2802B]/30 bg-[#B2802B]/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-[#8A611F]">
-              Proveedor de confianza para fabricantes de alimentos a nivel global
-            </span>
-            <h1 className="mt-6 text-4xl font-black leading-[1.1] tracking-tight text-[#2B1B12] sm:text-6xl">
-              Cacao Premium, Diseñado para Escala Industrial
-            </h1>
-            <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-[#5B4A3F] sm:text-lg">
-              Suministramos cacao trazable y certificado — granos, polvo, manteca y licor —
-              a fabricantes de confitería y alimentos que no pueden permitirse inconsistencias.
-            </p>
-            <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <a
-                href="#contact"
-                className="w-full rounded-md bg-[#5B3A29] px-8 py-3.5 text-sm font-bold text-[#FBF7F1] transition-colors hover:bg-[#2B1B12] sm:w-auto"
-              >
-                Solicitar Cotización
-              </a>
-              <a
-                href="#products"
-                className="w-full rounded-md border border-[#2B1B12]/15 px-8 py-3.5 text-sm font-bold text-[#2B1B12] transition-colors hover:bg-black/5 sm:w-auto"
-              >
-                Ver Especificaciones
-              </a>
+          <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
+            <div>
+              <span className="inline-flex items-center rounded-full border border-[#B2802B]/30 bg-[#B2802B]/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-[#8A611F]">
+                Proveedor de confianza para fabricantes de alimentos a nivel global
+              </span>
+              <h1 className="mt-6 text-4xl font-black leading-[1.1] tracking-tight text-[#2B1B12] sm:text-6xl">
+                Cacao Premium, Diseñado para Escala Industrial
+              </h1>
+              <p className="mt-6 max-w-xl text-base leading-relaxed text-[#5B4A3F] sm:text-lg">
+                Suministramos cacao trazable y certificado — granos, polvo, manteca y licor —
+                a fabricantes de confitería y alimentos que no pueden permitirse inconsistencias.
+              </p>
+              <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+                <a
+                  href="#contact"
+                  className="w-full rounded-md bg-[#5B3A29] px-8 py-3.5 text-center text-sm font-bold text-[#FBF7F1] transition-colors hover:bg-[#2B1B12] sm:w-auto"
+                >
+                  Solicitar Cotización
+                </a>
+                <a
+                  href="#products"
+                  className="w-full rounded-md border border-[#2B1B12]/15 px-8 py-3.5 text-center text-sm font-bold text-[#2B1B12] transition-colors hover:bg-black/5 sm:w-auto"
+                >
+                  Ver Especificaciones
+                </a>
+              </div>
+            </div>
+
+            <div className="relative">
+              <div className="relative h-[420px] overflow-hidden rounded-2xl shadow-xl shadow-[#2B1B12]/10">
+                <Image
+                  src={`${basePath}/images/cacao-beans-hand.jpg`}
+                  alt="Granos de cacao recién cosechados sostenidos en las manos"
+                  fill
+                  sizes="(min-width: 1024px) 50vw, 100vw"
+                  className="object-cover"
+                  priority
+                />
+              </div>
+              <div className="absolute -bottom-6 -left-6 hidden rounded-xl border border-black/10 bg-white px-5 py-4 shadow-lg sm:block">
+                <div className="text-2xl font-black text-[#2B1B12]">15 años</div>
+                <div className="text-xs text-[#8A7764]">Exportando cacao premium</div>
+              </div>
             </div>
           </div>
 
-          <div className="mx-auto mt-16 grid max-w-3xl grid-cols-2 gap-6 sm:grid-cols-4">
+          <div className="mx-auto mt-20 grid max-w-3xl grid-cols-2 gap-6 sm:grid-cols-4">
             {stats.map((stat) => (
               <div key={stat.label} className="text-center">
                 <div className="text-2xl font-black text-[#2B1B12] sm:text-3xl">{stat.value}</div>
@@ -111,18 +137,29 @@ export default function Home() {
             {products.map((product) => (
               <div
                 key={product.name}
-                className="rounded-2xl border border-black/10 bg-white p-6 sm:p-8"
+                className="overflow-hidden rounded-2xl border border-black/10 bg-white"
               >
-                <h3 className="text-xl font-bold text-[#2B1B12]">{product.name}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-[#5B4A3F]">{product.desc}</p>
-                <ul className="mt-5 space-y-2 border-t border-black/5 pt-4">
-                  {product.specs.map((spec) => (
-                    <li key={spec} className="flex items-center gap-2 text-sm text-[#5B4A3F]">
-                      <span className="h-1.5 w-1.5 flex-none rounded-full bg-[#B2802B]" />
-                      {spec}
-                    </li>
-                  ))}
-                </ul>
+                <div className="relative h-48 w-full">
+                  <Image
+                    src={product.image}
+                    alt={product.name}
+                    fill
+                    sizes="(min-width: 640px) 50vw, 100vw"
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-6 sm:p-8">
+                  <h3 className="text-xl font-bold text-[#2B1B12]">{product.name}</h3>
+                  <p className="mt-2 text-sm leading-relaxed text-[#5B4A3F]">{product.desc}</p>
+                  <ul className="mt-5 space-y-2 border-t border-black/5 pt-4">
+                    {product.specs.map((spec) => (
+                      <li key={spec} className="flex items-center gap-2 text-sm text-[#5B4A3F]">
+                        <span className="h-1.5 w-1.5 flex-none rounded-full bg-[#B2802B]" />
+                        {spec}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             ))}
           </div>
@@ -188,6 +225,15 @@ export default function Home() {
       {/* Sustainability */}
       <section id="sustainability" className="border-t border-black/5 py-20 sm:py-28">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
+          <div className="relative mb-14 h-64 overflow-hidden rounded-2xl sm:h-80">
+            <Image
+              src={`${basePath}/images/cacao-tree-fruit.jpg`}
+              alt="Vainas de cacao creciendo en el árbol"
+              fill
+              sizes="100vw"
+              className="object-cover"
+            />
+          </div>
           <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
             <div>
               <h2 className="text-sm font-bold uppercase tracking-wide text-[#B2802B]">
@@ -267,7 +313,17 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="mt-14 grid grid-cols-1 gap-6 sm:grid-cols-3">
+          <div className="relative mt-10 h-64 overflow-hidden rounded-2xl sm:h-80">
+            <Image
+              src={`${basePath}/images/port-aerial.jpg`}
+              alt="Puerto de exportación con contenedores de carga"
+              fill
+              sizes="100vw"
+              className="object-cover"
+            />
+          </div>
+
+          <div className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-3">
             {[
               { title: "Contenedores Completos", desc: "Envíos estándar FCL y LCL desde instalaciones portuarias certificadas." },
               { title: "Contratos Flexibles", desc: "Compras puntuales y acuerdos de suministro multianuales con opción de precio fijo." },
