@@ -1,5 +1,6 @@
 ---
 deployment:
   tasks:
-    - export DEPLOYPATH=/home/flowddkt/cacao.flowaiinfo.lat/
+    - export DEPLOYPATH=/home/flowddkt/public_html/cacao/
+    - /bin/mkdir -p $DEPLOYPATH
     - /bin/cp -R ./out/. $DEPLOYPATH
